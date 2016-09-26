@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Star Touch</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-css/bootstrap.css" rel="stylesheet">
+
+    <!-- other styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img id="startouch" src="assets/logo-blue.svg" alt="Star Touch logo">
+      </a>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+<!--         <a class="navbar-brand" href="#">
+            <img id="startouch" src="assets/logo-blue.svg" alt="Star Touch logo">
+        </a> -->
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-ipad.html"><i class="fa fa-apple" aria-hidden="true"></i> How-to: Apple</a></li>
+          <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-android.html"><i class="fa fa-android" aria-hidden="true"></i> How-to: Android</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<!--   ADD WRAPPER HERE-->
+
+  <!-- video section begins. CHECK: LA PRESSE CAN PLAY CODE -->
+  <section id="videoSection">
+    <div id="vidContainer">
+
+      <video poster="assets/placeholder_placeholder.jpg" autoplay loop>
+        <source src="assets/placeholder_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div id="backgroundIpad">
+        <img id="bgroundIpad" src="assets/placeholder_videoPromoAccueilMobile.jpg" alt="">
+      </div>  
+
+      <div id="downloads">
+        <a href=""><img id="appstore" src="assets/app-store-badge.svg" alt="appstore"></a>
+
+        <a href=""><img id="android" src="assets/google-play-badge.svg" alt="android"></a>
+      </div>
+
+    </div>
+  </section>
+
+
+<!--   main content. make a flickity maybe?-->
+
+ <section id="infoSection">
+
+    <div id="infoContainer" class="clearfix">
+
+        <div class="info">
+   
+           <img src="assets/placeholder_diversions.png" alt="diversions">
+
+           <h2>Diversions info</h2>
+
+            <p>Diversions details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut a doloremque, accusantium voluptate ad tenetur suscipit ullam cum sunt, consequatur consectetur harum error officiis, at consequuntur beatae veritatis eligendi velit!</p>
+
+        </div>
+
+        <div class="info">
+        
+           <img src="assets/placeholder_diversions.png" alt="diversions">
+
+           <h2>Diversions info</h2>
+
+            <p>Diversions details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut a doloremque, accusantium voluptate ad tenetur suscipit ullam cum sunt, consequatur consectetur harum error officiis, at consequuntur beatae veritatis eligendi velit!</p>
+
+        </div>
+
+    </div>
+
+ </section>
+
+<!--  footer content -->
+
+<footer>
+
+  <div id="footerContainer" class="clearfix">
+
+    <div class="col">
+      <p>© Copyright Toronto Star Newspapers Ltd. 1996-2016<br/>
+      Toronto Star Touch, a publication of Toronto Star Newspapers Limited</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore adipisci ea et quibusdam ipsa molestias quos eum id. Molestias sunt commodi, incidunt nobis distinctio fuga aut vitae dolore illo.</p>
+    </div>
+
+    <div class="col">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore adipisci ea et quibusdam ipsa molestias quos eum id. Molestias sunt commodi, incidunt nobis distinctio fuga aut vitae dolore illo.</p>
+    </div>
+
+    <div class="col">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+
+      <ul class="links">
+          <li><a href="http://www.thestar.com/about/star-touch/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+          <li><a href="http://www.thestar.com/about/star-touch/terms-of-use.html" target="_blank">Terms & Conditions</a></li>
+          <li><a href="mailto:circmail@thestar.ca" target="_blank">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-js/bootstrap.js"></script>
+
+    <script>
+      
+      if($('.info').length > 1) {
+        console.log('yes, more than one element exist')
+      }
+
+    </script>
+
+  </body>
+</html>

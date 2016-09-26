@@ -1,0 +1,261 @@
+/* Set Font Faces */
+
+/* Regular */
+@font-face {
+  font-family: Metric;
+  src:  url("../fonts/metric-family/Metric-Regular.otf"),
+        url("../fonts/metric-family/ttf/Metric-Regular.ttf") format('truetype');
+}
+
+/* Light */
+@font-face {
+  font-family: Metric;
+  src:  url("../fonts/metric-family/Metric-Light.otf"),
+        url("../fonts/metric-family/ttf/Metric-Light.ttf") format('truetype');
+  font-weight: 100;
+}
+
+/* Medium */
+@font-face {
+  font-family: Metric;
+  src:  url("../fonts/metric-family/Metric-Medium.otf"),
+        url("../fonts/metric-family/ttf/Metric-Medium.ttf") format('truetype');
+  font-weight: 500;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: Metric;
+  src:  url("../fonts/metric-family/Metric-Semibold.otf"),
+        url("../fonts/metric-family/ttf/Metric-Semibold.ttf") format('truetype');
+  font-weight: 600;
+}
+
+/* Bold */
+@font-face {
+  font-family: Metric;
+  src:  url("../fonts/metric-family/Metric-Bold.otf"),
+        url("../fonts/metric-family/ttf/Metric-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
+/*end fonts*/
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+	padding-top: 70px;
+	color: white;
+	font-family: Metric, Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+}
+
+#startouch {
+	height: 90px;
+	margin: 0 0 0 35px;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+}
+
+.navbar {
+	background: linear-gradient(to right,#363636 0%,#3c3c3c 65%,#363636 100%);
+	border: 0;
+}  
+
+.navbar-brand {
+	height: 73px;
+	padding: 0;
+}
+
+.navbar-nav {
+	float: right;
+	margin: 24px 0;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a {
+	background: none;
+	color: white;
+	padding: 0;
+}
+
+
+
+.navbar-default .navbar-nav > li > a {
+	height:30px; // makes the text overlap this element
+	overflow:visible;
+	display:inline-block;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	border-bottom: 5px solid #fff;
+	color: white;
+}
+
+.navbar a {
+	font-size: 1.5em;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    display: block;
+    background: white;
+    height: 5px;
+    width: 30px;
+    margin: 3px 0;
+}
+
+.navbar-toggle {
+	background: transparent !important;
+}
+
+#vidContainer {
+	display: block;
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+video {
+	display: block;
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#downloads {
+ 	position: absolute;
+ 	bottom: 4%;
+ 	left: 5%;
+}
+
+#bgroundIpad {
+	display: none;
+}
+
+#downloads img {
+	height: 60px;
+	margin: 0 10px 0 0;
+}
+
+#infoContainer {
+	color: black;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1600px;
+	font-size: 1.2em;	
+}
+
+.info {
+	float: left;
+	margin: 10px 0;
+}
+
+/* one item */
+.info:first-child:nth-last-child(1) {
+    width: 100%;
+}
+
+/* two items */
+.info:first-child:nth-last-child(2),
+.info:first-child:nth-last-child(2) ~ .info {
+    width: 50%;
+}
+
+#infoSection img {
+	width: 100%;
+}
+
+footer {
+	background: #333;
+	-webkit-box-shadow: inset 0px 22px 20px -10px rgba(0,0,0,0.65);
+	-moz-box-shadow: inset 0px 22px 20px -10px rgba(0,0,0,0.65);
+	box-shadow: inset 0px 22px 20px -10px rgba(0,0,0,0.65);
+	margin: 0;
+	padding: 0;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	list-style: none;
+}
+
+footer a {
+	color: white;
+}
+
+#footerContainer {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1600px;
+}
+
+.col {
+	width: 33.33%;
+	float: left;
+	padding: 100px 10px;
+}
+
+.col p {
+	font-size: 1.2em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 2.2em;
+}
+
+@media all and (max-width:760px) {
+
+	.col {
+		width: 100%;
+		padding: 10px;
+	}
+
+	video {
+		display: none;
+	}
+
+	#bgroundIpad {
+		display: block;
+		width: 100%;
+	}
+
+	#downloads img {
+		height: 50px;
+	}
+
+	#startouch {
+		margin: 0px 0 0 -12px;
+	}
+
+}

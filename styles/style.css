@@ -151,7 +151,7 @@ video {
 #downloads {
  	position: absolute;
  	bottom: 4%;
- 	left: 5%;
+ 	left: 4%;
 }
 
 #bgroundIpad {
@@ -176,6 +176,7 @@ video {
 	margin: 10px 0;
 }
 
+
 /* one item */
 .info:first-child:nth-last-child(1) {
     width: 100%;
@@ -184,7 +185,7 @@ video {
 /* two items */
 .info:first-child:nth-last-child(2),
 .info:first-child:nth-last-child(2) ~ .info {
-    width: 50%;
+    width: calc(50% - 20px);
 }
 
 #infoSection img {
@@ -234,6 +235,17 @@ h2 {
 	font-size: 2.2em;
 }
 
+h3 {
+	font-weight: 300;
+}
+
+@media all and (max-width:940px) {
+	h3 {
+		font-size: 20px;
+	}
+}
+
+
 @media all and (max-width:760px) {
 
 	.col {
@@ -250,12 +262,22 @@ h2 {
 		width: 100%;
 	}
 
+	#downloads {
+		bottom: 1%;
+	}
+
 	#downloads img {
 		height: 50px;
 	}
 
 	#startouch {
 		margin: 0px 0 0 -12px;
+	}
+
+	.info:first-child:nth-last-child(2),
+	.info:first-child:nth-last-child(2) ~ .info {
+		width: 100%;
+		margin-right: 0;
 	}
 
 }

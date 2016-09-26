@@ -67,6 +67,8 @@
       </div>  
 
       <div id="downloads">
+        <h3>Designed for tablets. Free every day.</h3>
+
         <a href=""><img id="appstore" src="assets/app-store-badge.svg" alt="appstore"></a>
 
         <a href=""><img id="android" src="assets/google-play-badge.svg" alt="android"></a>
@@ -146,9 +148,9 @@
 
     <script>
       
-      if($('.info').length > 1) {
-        console.log('yes, more than one element exist')
-      }
+      if($('.info').length == 2) {
+        $('.info:first-child').css('margin-right','20px');
+      };
 
     </script>
 

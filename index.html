@@ -22,34 +22,34 @@
   </head>
   <body>
 
-  <!-- Navigation -->
-  <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="navbar-header">
-          
-          <button type="button" class="navbar-toggle">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <img id="startouch" src="assets/logo-blue.svg" alt="Star Touch logo">
+        </a>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-          
-          <a class="navbar-brand" href="#">
-              <div class="logo">
-                <img id="startouch" src="assets/logo-blue.svg" class="logo" alt="logo"/>
-              </div>
-          </a>
-          
-      </div>
-          
-          <div class="navbar-collapse">
+  <!--         <a class="navbar-brand" href="#">
+              <img id="startouch" src="assets/logo-blue.svg" alt="Star Touch logo">
+          </a> -->
+        </div>
 
-            <ul class="nav navbar-nav">
-              <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-ipad.html"><i class="fa fa-apple" aria-hidden="true"></i> How-to: iOS</a></li>
-              <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-android.html"><i class="fa fa-android" aria-hidden="true"></i> How-to: Android</a></li>
-            </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-ipad.html"><i class="fa fa-apple" aria-hidden="true"></i> How-to: Apple</a></li>
+            <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-android.html"><i class="fa fa-android" aria-hidden="true"></i> How-to: Android</a></li>
+          </ul>
 
-          </div>
-      
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
   </div>
   <!-- End Navigation-->
 
@@ -147,12 +147,6 @@
       if($('.info').length == 2) {
         $('.info:first-child').css('margin-right','20px');
       };
-
-      $('.navbar-toggle').click(function(){
-        $('.navbar-collapse').toggleClass('right');
-        $('.navbar-toggle').toggleClass('indexcity');
-        $('.navbar-toggle').toggleClass('righty');
-     });
 
 
     </script>

@@ -39,8 +39,6 @@
   font-weight: 700;
 }
 
-/*end fonts*/
-
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -93,7 +91,6 @@ body {
 }
 
 
-
 .navbar-default .navbar-nav > li > a {
 	height:30px; // makes the text overlap this element
 	overflow:visible;
@@ -101,7 +98,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	border-bottom: 5px solid #fff;
+	border-bottom: 3px solid #fff;
 	color: white;
 }
 
@@ -130,7 +127,7 @@ body {
 
 .navbar-toggle {
 	background: transparent !important;
-}
+} 
 
 #vidContainer {
 	display: block;
@@ -176,7 +173,6 @@ video {
 	margin: 10px 0;
 }
 
-
 /* one item */
 .info:first-child:nth-last-child(1) {
     width: 100%;
@@ -185,7 +181,7 @@ video {
 /* two items */
 .info:first-child:nth-last-child(2),
 .info:first-child:nth-last-child(2) ~ .info {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
 }
 
 #infoSection img {
@@ -210,7 +206,12 @@ footer li {
 	list-style: none;
 }
 
+
 footer a {
+	color: white;
+}
+
+footer a:hover {
 	color: white;
 }
 
@@ -223,7 +224,7 @@ footer a {
 .col {
 	width: 33.33%;
 	float: left;
-	padding: 100px 10px;
+	padding: 50px 10px;
 }
 
 .col p {
@@ -239,14 +240,17 @@ h3 {
 	font-weight: 300;
 }
 
+ul.links {
+	padding: 0;
+} 
+
 @media all and (max-width:940px) {
 	h3 {
 		font-size: 20px;
 	}
 }
 
-
-@media all and (max-width:760px) {
+@media all and (max-width:770px) {
 
 	.col {
 		width: 100%;
@@ -264,6 +268,7 @@ h3 {
 
 	#downloads {
 		bottom: 1%;
+		left: 10%;
 	}
 
 	#downloads img {
@@ -280,4 +285,27 @@ h3 {
 		margin-right: 0;
 	}
 
+	#startouch {
+		height: 73px;
+	}
+
+	.navbar-default .navbar-nav > li > a {
+		padding: 20px 0;
+	}
+
+	.container {
+		padding-left: 0;
+	}
+
+}
+
+@media all and (max-width:435px) {
+
+	h3 {
+		margin: 0;
+	}
+	#downloads img {
+		height: 35px;
+		margin: 0;
+	}
 }

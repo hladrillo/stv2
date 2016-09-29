@@ -22,36 +22,36 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-          <img id="startouch" src="assets/logo-blue.svg" alt="Star Touch logo">
-      </a>
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-<!--         <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
             <img id="startouch" src="assets/logo-blue.svg" alt="Star Touch logo">
-        </a> -->
-      </div>
+        </a>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+  <!--         <a class="navbar-brand" href="#">
+              <img id="startouch" src="assets/logo-blue.svg" alt="Star Touch logo">
+          </a> -->
+        </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-ipad.html"><i class="fa fa-apple" aria-hidden="true"></i> How-to: Apple</a></li>
-          <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-android.html"><i class="fa fa-android" aria-hidden="true"></i> How-to: Android</a></li>
-        </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-ipad.html"><i class="fa fa-apple" aria-hidden="true"></i> How-to: Apple</a></li>
+            <li><a href="http://startouch.thestar.com/how-to-use-toronto-star-touch-on-android.html"><i class="fa fa-android" aria-hidden="true"></i> How-to: Android</a></li>
+          </ul>
 
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-<!--   ADD WRAPPER HERE-->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <!-- End Navigation-->
 
   <!-- video section begins. CHECK: LA PRESSE CAN PLAY CODE -->
   <section id="videoSection">
@@ -67,6 +67,8 @@
       </div>  
 
       <div id="downloads">
+        <h3>Designed for tablets. Free every day.</h3>
+
         <a href=""><img id="appstore" src="assets/app-store-badge.svg" alt="appstore"></a>
 
         <a href=""><img id="android" src="assets/google-play-badge.svg" alt="android"></a>
@@ -115,17 +117,13 @@
     <div class="col">
       <p>© Copyright Toronto Star Newspapers Ltd. 1996-2016<br/>
       Toronto Star Touch, a publication of Toronto Star Newspapers Limited</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore adipisci ea et quibusdam ipsa molestias quos eum id. Molestias sunt commodi, incidunt nobis distinctio fuga aut vitae dolore illo.</p>
     </div>
 
     <div class="col">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore adipisci ea et quibusdam ipsa molestias quos eum id. Molestias sunt commodi, incidunt nobis distinctio fuga aut vitae dolore illo.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore adipisci ea et quibusdam ipsa molestias quos eum id. </p>
     </div>
 
     <div class="col">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-
       <ul class="links">
           <li><a href="http://www.thestar.com/about/star-touch/privacy-policy.html" target="_blank">Privacy Policy</a></li>
           <li><a href="http://www.thestar.com/about/star-touch/terms-of-use.html" target="_blank">Terms & Conditions</a></li>
@@ -146,9 +144,10 @@
 
     <script>
       
-      if($('.info').length > 1) {
-        console.log('yes, more than one element exist')
-      }
+      if($('.info').length == 2) {
+        $('.info:first-child').css('margin-right','20px');
+      };
+
 
     </script>
 

@@ -21,6 +21,7 @@
     <![endif]-->
   </head>
   <body>
+    <div id="grey">
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -50,14 +51,14 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-  </div>
+  
   <!-- End Navigation-->
 
   <!-- video section begins. CHECK: LA PRESSE CAN PLAY CODE -->
   <section id="videoSection">
     <div id="vidContainer">
 
-      <video poster="assets/placeholder_placeholder.jpg" autoplay loop>
+      <video poster="assets/placeholder_placeholder.jpg" autoplay loop muted>
         <source src="assets/placeholder_video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -103,6 +104,7 @@
   </div>
 
 </footer>
+</div>
 
 
 
@@ -112,9 +114,28 @@
     <script src="bootstrap-js/bootstrap.js"></script>
 
     <script>
-      
-      if($('.info').length == 2) {
-        $('.info:first-child').css('margin-right','20px');
+
+    if($('.info').length == 2) {
+      $('.info:first-child').css('margin-right','20px');
+    };
+
+    var footer = function() {
+      var bod = $("body").height();
+      var wind = $(window).height();
+
+        if (bod > wind ) { 
+          $("footer").css("position","static");
+        }
+        else if (bod < wind)  {
+          $("footer").css("position","absolute");
+          $("footer").css("bottom","0");
+        }
+    }
+
+    footer();
+
+      window.onresize = function(event) {
+        footer();
       };
 
 
